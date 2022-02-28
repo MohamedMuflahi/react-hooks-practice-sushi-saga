@@ -1,7 +1,7 @@
 import React from "react";
 
-function MoreButton(props) {
-  return <button onClick={/* Fill me in! */ null}>More sushi!</button>;
+function MoreButton({setIteration}) {
+  return <button onClick={()=>setIteration((iteration)=> iteration+4)}>More sushi!</button>;
 }
 
 export default MoreButton;
